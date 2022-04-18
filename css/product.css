@@ -1,0 +1,117 @@
+/* Start Variable */
+:root {
+    --main-color: #e6a756;
+    --sec-color: #2F170F;
+    --main-padding: 80px;
+    --back-color: #f6e1c5;
+    }
+/* End Variable */
+
+/* Start Section One */
+.sec-one {
+    padding-top: 180px;
+    padding-bottom: var(--main-padding);
+    margin-bottom: var(--main-padding);
+    
+}
+.sec-one .container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec-one .container .text {
+    width: fit-content;
+    background-color: var(--back-color);
+    border-radius: 8px;
+    padding: 30px;
+}
+.sec-one .container .text:nth-child(1) {
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+    top: -100px;
+    text-align: left;
+}
+.sec-one .container .text h2 {
+    font-size: 18px;
+}
+.sec-one .container .text h1 {
+    font-size: 45px;
+}
+.sec-one .image {
+    width: 650px;
+    margin: auto;
+}
+.sec-one .image img {
+    width: 100%;
+    border-radius: 8px;
+}
+.sec-one .container .text:nth-child(3) {
+    align-self: flex-start;
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+    text-align: left;
+    width: 650px;
+    line-height: 1.6;
+}
+@media(max-width: 1000px) {
+    .sec-one .container .text:nth-child(1) {        
+        top: -135px;
+    }
+    .sec-one .image {
+        width: 100%;
+    }
+    .sec-one .container .text:nth-child(3) {
+        width: 100%;
+        line-height: 1.4;
+        font-size: 14px;
+        align-self: center;
+        margin-top: 30px;
+    }
+}
+@media(max-width: 767px) {
+    .sec-one {
+        margin-bottom: 100px;
+    }
+    .sec-one .container .text:nth-child(1) {        
+        top: -130px;
+        width: 100%;
+    }
+    .sec-one .container .text h2 {
+        font-size: 14px;
+    }
+    .sec-one .container .text h1 {
+        font-size: 30px;
+    }
+    .sec-one .container .text:nth-child(3) {
+        line-height: 1.4;
+        font-size: 14px;
+        align-self: center;
+        margin-top: 30px;
+        top: 100%;
+        height: fit-content;
+    }
+}
+@media(max-width: 400px) {
+    .sec-one {
+        margin-bottom: 250px;
+    }
+}
+/* End Section One */
+/* Global */
+#special:nth-child(1) {
+    align-self: flex-start;
+    left: 0;
+}
+
+#special:nth-child(3) {
+    align-self: flex-end;
+    right: 0;
+    left: unset;
+}
+.footer {
+    margin-top: 140px;
+}
